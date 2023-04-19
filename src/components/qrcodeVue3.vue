@@ -3,8 +3,12 @@ import QRCodeVue3 from "qrcode-vue3";
 import nasubi from "@/assets/nasubi.png";
 
 const props = defineProps({
-	value: String,
+	value:{
+		type: String,
+		default:"",
+	},
 });
+const text="Hello World";
 </script>
 
 <template>
