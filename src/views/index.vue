@@ -2,8 +2,9 @@
 import { ref } from 'vue';
 import { updatePlayerName } from '@/server/usePlayerID';
 import { usePlayerStore } from '@/store';
-import QRCodeGenerator from '@/components/QRCodeGenerator.vue';
 
+import qrcodeVue from '@/components/qrcodeVue3.vue';
+import QRCodeGenerator from '@/components/QRCodeGenerator.vue';
 
 const playerStore = usePlayerStore();
 
@@ -46,6 +47,8 @@ async function updateName() {
 		<router-link to="/menu" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg px-4 py-2 btn-pop">
 			<button> Menu</button>
 		</router-link>
+
+		<qrcodeVue :value="playerStore.id" />
 		<QRCodeGenerator :msg=playerStore.id />
 
 	</div>

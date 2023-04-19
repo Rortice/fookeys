@@ -10,7 +10,7 @@ const option = {
 	maskPattern: 0,
 	margin: 1,
 	scale: 2,
-	width: 500,
+	width: 300,
 	color: {
 		dark: "#000000FF",
 		light: "#FFFFFFFF"
