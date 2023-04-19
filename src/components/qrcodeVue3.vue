@@ -8,7 +8,6 @@ const props = defineProps({
 		default:"",
 	},
 });
-const text="Hello World";
 </script>
 
 <template>
