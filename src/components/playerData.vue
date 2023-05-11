@@ -7,15 +7,6 @@ const { id, idEnemy, idGame, name, character, gift } = storeToRefs(playerStore);
   <div class="flex justify-start">
     <ul class="divide-y divide-gray-200">
       <li class="py-4">
-        <p class="text-sm font-medium text-gray-900 truncate">id:{{ id }}</p>
-      </li>
-      <li class="py-4">
-        <p class="text-sm font-medium text-gray-900 truncate">idEnemy:{{ idEnemy }}</p>
-      </li>
-      <li class="py-4">
-        <p class="text-sm font-medium text-gray-900 truncate">idGame:{{ idGame }}</p>
-      </li>
-      <li class="py-4">
         <p class="text-sm font-medium text-gray-900 truncate">name:{{ name }}</p>
       </li>
       <li class="py-4">

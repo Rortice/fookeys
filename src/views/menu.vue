@@ -21,21 +21,22 @@ async function startMatch(): Promise<void> {
     <PlayerData />
 
     <div class="flex flex-1">
-      <div class="w-1/2 flex items-center justify-center">
-        <img :src="nasubi" class="max-h-full max-w-full" />
-      </div>
 <!-- TODO キャラとギフト選択を押した場合このコンポーネントを入れ替える -->
       <div class="w-1/2 p-8 flex flex-col justify-center">
-        <button class="p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-md mb-4 btn-pop" @click="startMatch">
-          エントリー
+        <button @click="startMatch">
+          <img src="./../../src/assets/entry.png">
         </button>
 
-        <router-link to="/character" class="p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-md mb-4 btn-pop">
-          <button class="text-white rounded-md">キャラ選択</button>
+        <router-link to="/character">
+          <button class="text-white rounded-md">
+            <img src="./../../src/assets/utuwa.png">
+          </button>
         </router-link>
 
-        <router-link to="/gift" class="p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-md mb-4 btn-pop">
-          <button class="text-white rounded-md">ギフト選択</button>
+        <router-link to="/gift">
+          <button class="text-white rounded-md">
+            <img src="../../src/assets/gift.png">
+          </button>
         </router-link>
       </div>
     </div>
